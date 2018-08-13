@@ -1,0 +1,20 @@
+<view class='container'>
+	<view class='content-top'>
+		<view class='top-item top-start' bindtap='goStart'>START</view>
+		<view class='top-item top-score'>
+			<view class='score-description'>得分</view>
+			<view class='score-number'>{{score}}</view>
+		</view>
+		<view class='top-item top-score'>
+			<view class='score-description'>历史最高</view>
+			<view class='score-number'>{{maxScore}}</view>
+		</view>
+	</view>
+	<view class='content-bottom' bindtouchmove='touchMove' bindtouchstart='touchStart' bindtouchend='touchEnd'>
+		<view wx:for="{{ground}}" wx:for-item="cols" class='ground-row'>
+			<view wx:for="{{cols}}" class='ground-col'>
+				<view class='block block{{item}}'></view>
+			</view>			
+		</view>
+	</view>
+</view>

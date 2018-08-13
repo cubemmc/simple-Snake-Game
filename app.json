@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/index/snake"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "SnakeGame",
+    "navigationBarTextStyle":"black"
+  }
+}
